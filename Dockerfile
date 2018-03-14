@@ -11,7 +11,7 @@ RUN \
   rm -rf /usr/local/tomcat/webapps/* && \
   adduser tomcat -h /usr/local/tomcat -D && \
   chmod a+rX /usr/local/tomcat -R && \
-  chown tomcat /usr/local/tomcat/logs /usr/local/tomcat/conf /usr/local/tomcat/work -R && \
+  chown tomcat /usr/local/tomcat/logs /usr/local/tomcat/conf /usr/local/tomcat/work /usr/local/tomcat/temp -R && \
   chmod 0755 /start_tomcat.sh
 
 CMD "/start_tomcat.sh"

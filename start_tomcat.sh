@@ -16,4 +16,4 @@ fi
 
 chown ${TOMCAT_CHOWN} /usr/local/tomcat/logs /usr/local/tomcat/conf /usr/local/tomcat/work /usr/local/tomcat/temp -R
 
-su - ${TOMCAT_USERNAME} -c "/usr/local/tomcat/bin/catalina.sh run"
+su ${TOMCAT_USERNAME} -c "/usr/local/tomcat/bin/catalina.sh run"

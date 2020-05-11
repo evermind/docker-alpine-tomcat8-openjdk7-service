@@ -1,6 +1,6 @@
 FROM library/tomcat:8-jre7-alpine
 
-RUN apk --no-cache --update add bash python curl && \
+RUN apk --no-cache --update add bash python curl fontconfig ttf-dejavu && \
   curl -s https://gist.githubusercontent.com/micw/d7c0e34aee751e81c5aa952b29b8631b/raw/8d67835c09ed2d32a61a05b5e4f0e2451fd2f0d4/update_config.py \
     > /usr/local/bin/update_config.py && \
   chmod 0755 /usr/local/bin/update_config.py && \
